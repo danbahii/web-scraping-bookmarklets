@@ -1,0 +1,1 @@
+var texts=[];document.querySelectorAll("body *").forEach(function(e){if(e.innerText)texts.push(e.innerText.trim());});var str=texts.join("\n");var a=document.createElement("a");a.href="data:text/plain;charset=utf-8,"+encodeURIComponent(str);a.download="page-texts.txt";document.body.appendChild(a);a.click();document.body.removeChild(a);

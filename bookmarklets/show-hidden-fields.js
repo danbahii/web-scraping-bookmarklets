@@ -1,0 +1,1 @@
+document.querySelectorAll('[type="hidden"],[style*="display:none"]').forEach(function(e){e.style.display="block";e.type="text";});alert('Campos ocultos revelados!');

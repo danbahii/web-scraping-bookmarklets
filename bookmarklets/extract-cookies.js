@@ -1,0 +1,1 @@
+var cookies=document.cookie;var a=document.createElement("a");a.href="data:text/plain;charset=utf-8,"+encodeURIComponent(cookies);a.download="cookies.txt";document.body.appendChild(a);a.click();document.body.removeChild(a);

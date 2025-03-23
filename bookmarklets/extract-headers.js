@@ -1,0 +1,1 @@
+var headers=[];document.querySelectorAll("h1,h2,h3,h4,h5,h6").forEach(function(e){headers.push(e.innerText.trim());});var str=headers.join("\n");var a=document.createElement("a");a.href="data:text/plain;charset=utf-8,"+encodeURIComponent(str);a.download="headers.txt";document.body.appendChild(a);a.click();document.body.removeChild(a);

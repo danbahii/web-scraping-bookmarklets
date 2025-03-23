@@ -1,0 +1,1 @@
+var links=[];document.querySelectorAll("a").forEach(function(e){if(e.href)links.push(e.href);});var linkString=links.join("\n");var a=document.createElement("a");a.href="data:text/plain;charset=utf-8,"+encodeURIComponent(linkString);a.download="links.txt";document.body.appendChild(a);a.click();document.body.removeChild(a);
